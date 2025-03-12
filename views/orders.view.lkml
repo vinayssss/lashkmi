@@ -10,6 +10,7 @@ view: orders {
   dimension_group: created {
     type: time
     timeframes: [raw, time, date, week, month, quarter, year]
+    datatype: date
     sql: ${TABLE}.created_at ;;
   }
   dimension: order_date {
